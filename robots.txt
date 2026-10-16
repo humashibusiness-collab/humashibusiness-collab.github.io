@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://humashibusiness-collab.github.io/sitemap.xml
