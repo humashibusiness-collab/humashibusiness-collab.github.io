@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Playable ad samples | Humashi Labs</title>
+<meta name="description" content="HTML5 playable ad samples by Humashi Labs: idle shop, pull the pin and merge defense. One build exported for 8 ad networks.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=IBM+Plex+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.samples { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.sample { display: grid; gap: 10px; align-content: start; }
+.sample img { width: 100%; max-width: 260px; aspect-ratio: 390 / 844; object-fit: cover; border-radius: 18px; border: 3px solid currentColor; }
+.sample h3 { margin: 0; }
+.sample p { margin: 0; }
+.specs { display: grid; gap: 6px; padding-left: 1.2em; }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="./">Humashi <span>Labs</span></a>
+    <nav class="nav" aria-label="Site">
+      <a href="./#works">作品</a>
+      <a href="playable.html" aria-current="page">Playable ads</a>
+      <a href="press.html">配信・取材の方へ</a>
+      <a href="./#contact">連絡先</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Playable ad samples</h1>
+    <p class="en">HTML5 playable ads for mobile games. One build is exported for AppLovin, Unity Ads, Meta, Google Ads, Mintegral, TikTok (Pangle), Moloco and Liftoff. Tap a sample to play it in your browser.</p>
+    <p>スマホゲームの「遊べる広告」の見本です。押すとブラウザで遊べます（音は最初のタップのあとに鳴ります）。</p>
+  </div>
+
+  <section aria-labelledby="samples-h">
+    <h2 id="samples-h">Samples <small class="sub">見本</small></h2>
+    <div class="samples">
+      <a class="sample card" href="playable/idle_shop.html">
+        <img src="assets/playable/idle_shop.webp" alt="Idle shop playable: a potion shop with a queue of customers" loading="lazy" width="390" height="844">
+        <h3>Idle shop</h3>
+        <p>Serve the angry queue, hire helpers, grow the stall into the best shop in town, until the King arrives. About 25 s.</p>
+      </a>
+      <a class="sample card" href="playable/pin_puzzle.html">
+        <img src="assets/playable/pin_puzzle.webp" alt="Pull the pin playable: tower rooms with gold, lava and water" loading="lazy" width="390" height="844">
+        <h3>Pull the pin</h3>
+        <p>Gold, lava, water (lava + water = stone) and a skeleton. Four levels, the last one asks you to think first. About 20 s.</p>
+      </a>
+      <a class="sample card" href="playable/merge_ghost.html">
+        <img src="assets/playable/merge_ghost.webp" alt="Merge defense playable: merge familiars into a dragon to protect the village" loading="lazy" width="390" height="844">
+        <h3>Merge defense</h3>
+        <p>Monsters reach the village gate. Merge bats into a dragon, burn the horde, and then the boss appears. About 15 s.</p>
+      </a>
+    </div>
+  </section>
+
+  <section aria-labelledby="specs-h">
+    <h2 id="specs-h">How they are built <small class="sub">作り</small></h2>
+    <div class="card">
+      <ul class="specs">
+        <li>Hook in the first seconds, one tutorial hand, a clear fail or win moment, an end card, and a Play button visible from start to end.</li>
+        <li>Portrait and landscape. Under 1 MB each.</li>
+        <li>Starts only when the ad is visible, never opens the store on the first tap, sound only after the first tap, nothing counts down before the first tap.</li>
+        <li>Automated tests for every network export. Checked in AppLovin's Playable Preview and Google's HTML5 Validator.</li>
+        <li>The art in these samples is AI-assisted. Client work uses the client's own game art.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 Humashi Labs</span>
+    <span><a href="./">トップ</a> · <a href="privacy.html">Privacy policy</a></span>
+  </div>
+</footer>
+</body>
+</html>
